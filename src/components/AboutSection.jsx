@@ -37,7 +37,7 @@ const AboutSection = () => {
 
           {/* TOP LEFT ABOUT BOX */}
           <div className="p-6 rounded-xl bg-white relative">
-            <p className="text-[#9E2349] font-semibold mb-2">-About Us</p>
+            <p className="text-[#9E2349] font-semibold mb-2">   —About Us</p>
             <h2 className="text-3xl md:text-4xl font-bold leading-snug text-gray-900">
               Lilypad is the only Real <br />
               Estate Investment tool <br />
@@ -45,10 +45,10 @@ const AboutSection = () => {
               business
             </h2>
 
-            {/* RIGHT vertical line (desktop) */}
+        
             <div className="hidden lg:block absolute top-0 right-0 h-full w-px bg-gray-200"></div>
 
-            {/* BOTTOM horizontal line */}
+        
             <div className="absolute bottom-0 left-0 w-full h-px bg-gray-200"></div>
           </div>
 
@@ -58,12 +58,12 @@ const AboutSection = () => {
               key={idx}
               className="p-6 rounded-xl bg-white relative hover:shadow-md transition-all"
             >
-              {/* Vertical divider (desktop) except last col */}
+             
               {idx % 3 !== 2 && (
                 <div className="hidden lg:block absolute top-0 right-0 h-full w-px bg-gray-200"></div>
               )}
 
-              {/* Horizontal divider (all rows except last row) */}
+          
               {idx < 3 && (
                 <div className="absolute bottom-0 left-0 w-full h-px bg-gray-200"></div>
               )}
